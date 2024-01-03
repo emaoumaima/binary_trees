@@ -21,7 +21,20 @@ struct binary_tree_s
 typedef struct binary_tree_s binary_tree_t;
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 void binary_tree_print(const binary_tree_t *tree);
-
+/**
+ * struct bst_node_s - Binary search tree node
+ *
+ * @value: Integer stored in the node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
+struct bst_node_s
+{
+	int value;
+	struct bst_node_s *left;
+	struct bst_node_s *right;
+};
+typedef struct bst_node_s bst_node_t;
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
