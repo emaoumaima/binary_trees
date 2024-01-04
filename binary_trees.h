@@ -90,6 +90,16 @@ bst_t *bst_min_val(bst_t *root);
 int btia_helper(const binary_tree_t *tree, int low, int hi);
 int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
+void bal(avl_t **tree);
+int successor(bst_t *node);
+int remove_type(bst_t *root);
+bst_t *bst_remove(bst_t *root, int value);
+size_t tree_height(const heap_t *tree);
+size_t tree_size_h(const binary_tree_t *tree);
+void _preorder(heap_t *tree, heap_t **node, size_t height);
+void heapify(heap_t *root);
+size_t tree_size(const binary_tree_t *tree);
+
 
 
 #endif
